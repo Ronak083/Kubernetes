@@ -7,3 +7,12 @@ How to verify:
  kubectl get nodes
  kubectl get pods -A
 ```
+Else use AWS
+```yaml
+ eksctl create cluster \
+                 --name learningcluster \
+                 --nodes=2 \
+                 --node-type=t3.small \
+                 --region=us-east-1 \
+                 --version=1.33
+```
